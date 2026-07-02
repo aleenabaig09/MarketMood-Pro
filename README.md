@@ -13,7 +13,6 @@ MarketMood Pro is an interactive stock analytics dashboard that combines market 
 - Flags sentiment-price mismatches
 - Generates a custom Market Reaction Score
 - Analyzes stock performance around major earnings events
-- Produces a concise analyst summary
 
 ## Stocks Included
 
@@ -24,6 +23,17 @@ MarketMood Pro is an interactive stock analytics dashboard that combines market 
 - Meta (`META`)
 - Tesla (`TSLA`)
 - Alphabet / Google (`GOOGL`)
+
+## Dashboard Tabs
+
+### Overview
+Shows price movement, moving averages, daily returns, trading volume, volatility, and unusual volume days.
+
+### Sentiment Analysis
+Scores saved financial-news headlines and compares sentiment with stock returns to identify possible market mismatches.
+
+### Event Study
+Shows cumulative stock returns around selected company events, such as earnings releases.
 
 ## Technologies Used
 
@@ -36,18 +46,7 @@ MarketMood Pro is an interactive stock analytics dashboard that combines market 
 
 ## How to Run
 
-Install dependencies:
+Install the required packages:
 
 ```bash
-pip install -r requirements.txt
-```
-
-Run the dashboard:
-
-```bash
-streamlit run app.py
-```
-
-## Notes
-
-MarketMood Pro is an educational portfolio project. It is not investment advice and does not predict future stock performance.
+pip install streamlit pandas yfinance plotly vaderSentiment
